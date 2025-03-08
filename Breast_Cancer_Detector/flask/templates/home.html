@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="../static/form.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>CheckItUp</title>
+</head>
+<body>
+  
+  <header class="head ">
+    <div class="background">
+    <nav class="navbar h-nav-resp">
+      <div class="logo logo-click"><a href="/"> <img src="../static/IMG/text3.png" alt="logo"></a></div>
+      <ul class="nav-list v-class-resp">
+        
+        <li> <a href="/">Home</a></li>
+        <li><a href="/checkup">CheckUp</a></li>
+        <li><a href="#aboutus">AboutUs</a></li>
+      </ul>
+      
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+    
+    <section class="firstSection">
+      <div class="main-box">
+        <div class="fade-in">
+          <img src="../static/IMG/logo12.png" alt="">
+          <p class = "text-small">Diagonosis, Treatment, Prevention</p>
+          <p class = "text-big">Embrace The Future</p>
+          
+          <button class="button"><span>Learn More </span></button>
+        </div>
+        
+      </div>
+    </section>
+  </div>
+</header>
+<div class="popup" >
+    <div class="close-btn">&times;</div>
+    <div class="form" action = "/login" method="POST">
+       
+        <!-- <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'SignUp')">Sign In</button>
+            <button class="tablinks" onclick="openTab(event, 'Login')">Login</button>
+        </div> -->
+
+        
+        <!-- <form id="SignUp" class="tabcontent active" action="/signin" method="POST">
+            <h2>Sign In</h2>
+            <div class="form-element">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" placeholder="Enter Email">
+            </div>
+            
+            <div class="form-element">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Enter Password">
+            </div>
+            <div class="form-element">
+                <label for="signup-re-password">Confirm Password</label>
+                <input type="password" id="signup-re-password" placeholder="Re-Enter Password">
+            </div>
+            
+          </form> -->
+
+        <form id="Login" class="tabcontent" action="/login" method="POST">
+            <h2>Login</h2>
+            <div class="form-element">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="Enter Username">
+            </div>
+            <div class="form-element">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter Password">
+            </div>
+            <div class="form-element">
+                <button>Login</button>
+            </div>
+          </form>
+    </div>
+</div>
+
+<main>
+  <div class="discript-one discript-one-resp" id="aboutus">
+    <img src="../static/IMG/aboutus1.webp" alt="">
+    <div class="discript-two discript-two-resp hidden show" >
+    <h4>OUR MISSION</h4>
+    <h5>Founding Priniciples</h5>
+    <p>Our strength lies not only in the words we stand by, but most importantly in the actions of our initiatives. Since our establishment, we have recognized the power of collaboration in overcoming challenges, leading to the creation of Cells Checkup. We are dedicated to driving positive change in all our endeavors.
+    </p>
+  </div>
+  </div>
+  <div class="initiatives  hidden show">
+    <h4>INITIATIVES</h4>
+    <p>Impactful Work</p>
+  </div>
+  <div class="all-initiatives">
+    <div class="initiative-1 i-1  hidden show">
+      <div>
+        <h5>Community <br> Engagement</h5>
+        <p>Bright Horizons Ahead</p>
+      </div>
+      <div class="r-row">
+        <p1>Feeling overwhelmed by numerous pressing issues? Our Community Engagement program at Cells Checkup has been a catalyst for positive change, impacting  countless lives.</p1>
+      </div>
+    </div>
+    <div class="initiative-1 i-2  hidden show">
+      <div>
+        <h5>Local <br> Support</h5>
+        <p>Transforming Lives</p>
+      </div>
+      
+      <div class="r-row">
+        <p1>Our Local Support program, a cornerstone of Cells Checkup, is a testament to our commitment to making a tangible difference in our Cancer Research Organization.</p1>
+      </div>
+    </div>
+    <div class="initiative-1 i-3  hidden show">
+      <div>
+        <h5>Economic <br> Empowerment</h5>
+        <p>Creating Opportuinities</p>
+      </div>
+      <div class="r-row">
+        <p1>At Cells Checkup, we view challenges as stepping stones  to progress. Through our Economic Empowerment initiative, we equip individuals with the resilience to thrive in diverse circumstances.</p1>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</main>
+<br><br><br><br>
+  <footer> 
+      <div class="footer-box footer-box-resp">
+        <div class="footer-c">
+          <h3>CELLS CHECKUP</h3>
+          <p>Our strength lies not only in the words we stand by, but most importantly in 
+            the actions of our initiatives.</p>
+        </div>
+        <div class="footer-c">
+          <h4>Contact Info</h4>
+          <p>Email-Id : cellcheckup123@gmail.com</p>
+          <p>Phone Number : +91 00001 28999</p>
+        </div>
+        <div class="footer-c">
+          <h4>Follow Us</h4>
+          <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter" style="color:white"></i>
+            </a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color:white"></i></a>
+            
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color:white"></i></i></a>
+            
+        </div>
+        <div class="fourth-c"></div>
+      </div>
+  </footer>
+  <script src="../static/JS/response.js"></script>
+  <script src="../static/JS/form.js"></script>
+
+</body>
+</html>
