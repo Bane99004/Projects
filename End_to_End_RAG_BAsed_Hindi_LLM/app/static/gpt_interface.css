@@ -1,0 +1,108 @@
+body{
+  background-color: #141414;
+}
+section {
+  padding-top: 500px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.input-box {
+  background-color: #2a2a2a;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  height: 70px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.input-box:focus-within {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(255, 153, 51, 0.3);
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.input-icon {
+  color: #888;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #e0e0e0;
+  font-size: 16px;
+  padding: 12px 0;
+  outline: none;
+}
+
+.input-box input::placeholder {
+  color: #888;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.feature-btn {
+  background: none;
+  border: none;
+  color: #888;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.feature-btn:hover {
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+}
+
+button.send-btn {
+  background: linear-gradient(125deg, #FF9933, #FFFFFF, #159709);
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+button.send-btn:hover {
+  transform: scale(1.05);
+}
+
+.send-icon {
+  color: #121212;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .input-box {
+    width: 90%;
+  }
+}
