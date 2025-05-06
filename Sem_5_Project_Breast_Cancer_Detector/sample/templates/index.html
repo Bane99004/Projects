@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Send Data to Python</h1>
+    <form id="dataForm">
+        <label for="inputValue">Enter a value:</label>
+        <input type="text" id="inputValue" >
+        <button type="submit">Submit</button>
+    </form>
+    <p id="response">fazfcafafafse</p>
+
+    <script>
+        document.getElementById('dataForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const inputValue = document.getElementById('inputValue').value;
+
+            fetch('/process', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ "inputValue": inputValue })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('response').innerText = data.input_value;
+            });
+        });
+    </script>
+</body>
+</html>
