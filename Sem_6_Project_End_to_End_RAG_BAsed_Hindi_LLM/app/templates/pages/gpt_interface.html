@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="gpt_interface.css">
+  
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        GPT
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="gpt_interface.html">TryGPT</a></li>
+          <li>Info</li>
+          <li>AboutUs</li>
+        </ul>
+      </div>
+      <div class="sign-in">
+        <button class="shine"></button>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="question"></div>
+    <div class="answer"></div>
+    <form class="input-box">
+      <div class="input-wrapper">
+        <i class="fas fa-search input-icon"></i>
+        <input id="promptInput" type="text" placeholder="Type your message here...", autocomplete="off">
+      </div>
+        <button onclick="sendPrompt()" type="submit" class="send-btn" title="Send message">
+          <i class="fas fa-paper-plane send-icon"></i>
+        </button>
+      </div>
+    </form>
+  </section>
+  <script src="gpt_interface.js"></script>
+</body>
+</html>
